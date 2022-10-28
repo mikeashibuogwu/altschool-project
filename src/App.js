@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import User from './User';
+import AppRouter from './Routing';
+import Sample from './Sample';
+import { ErrorBoundary, useErrorHandler} from 'react-error-boundary';
+
+
+function ErrorFallback({ error }) {
+  return (
+    <div role="alert">
+      <p>Something went wrong:</p>
+      <pre style={{ color: 'red' }}>{error.message}</pre>
+    </div>
+  );
+}
+
+
 
 function App() {
-  return (
+return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppRouter />
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
+        <Sample />
+      </ErrorBoundary>
     </div>
   );
 }
