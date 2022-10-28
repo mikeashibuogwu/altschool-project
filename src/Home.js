@@ -9,13 +9,13 @@ function Home()  {
 
   console.log({ loading, error, data });
   const PER_PAGE = 10;
-  const total = data?.results?.length;
+ // const total = data?.results?.length;
   const pages = 20;
 
-  const skip = page * PER_PAGE - PER_PAGE;
-  // console.log(skip, total);
+  //const skip = page * PER_PAGE - PER_PAGE;
+  
 
-  // use the useEffect to make api call based on the page.
+
   if (loading) {
     return <>Loading...</>;
   }
