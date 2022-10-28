@@ -1,8 +1,7 @@
 import React from 'react';
-import User from './User';
 import AppRouter from './Routing';
 import Sample from './Sample';
-import { ErrorBoundary, useErrorHandler} from 'react-error-boundary';
+import { ErrorBoundary } from 'react-error-boundary';
 
 
 function ErrorFallback({ error }) {
