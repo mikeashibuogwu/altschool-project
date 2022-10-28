@@ -8,7 +8,7 @@ function Home()  {
   );
 
   console.log({ loading, error, data });
-  const PER_PAGE = 10;
+  //const PER_PAGE = 10;
  // const total = data?.results?.length;
   const pages = 20;
 
