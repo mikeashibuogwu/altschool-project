@@ -1,6 +1,5 @@
-import React from 'react';
+importance React from 'react';
 import AppRouter from './Routing';
-import Sample from './Sample';
 import { ErrorBoundary } from 'react-error-boundary';
 
 
