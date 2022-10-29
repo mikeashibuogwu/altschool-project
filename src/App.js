@@ -20,7 +20,7 @@ return (
     <div className="App">
       <AppRouter />
       <ErrorBoundary FallbackComponent={ErrorFallback}>
-        <Sample />
+        
       </ErrorBoundary>
     </div>
   );
